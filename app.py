@@ -76,7 +76,7 @@ def get_conversational_chain(tools, ques):
     # llm = ChatAnthropic(model="claude-3-sonnet-20240229", temperature=0, api_key=os.getenv("ANTHROPIC_API_KEY"), verbose=True)
     
     # Using OpenAI's GPT model instead
-    # llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0,api_key="")
+    llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0,api_key="")
 
     #run this model in the local system
     llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0,api_key="anything",base_url="http://0.0.0.0:4000")
