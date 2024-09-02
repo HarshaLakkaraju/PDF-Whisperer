@@ -41,6 +41,16 @@ PDF-Whisperer is an intelligent PDF reader powered by Large Language Models (LLM
 
    ![Local Setup](image.png)
 
+   [Pull Ollama model](https://ollama.com/library)
+
+   ```bash
+   ollama pull <model_name>
+   ```
+   model used in litellm must be present in local system to check 
+   ```bash
+   ollama list
+   ```
+
    Start the Litellm proxy:
 
    ```bash
@@ -48,6 +58,7 @@ PDF-Whisperer is an intelligent PDF reader powered by Large Language Models (LLM
    ```
 
    The proxy will run on `http://0.0.0.0:4000`. Use this URL as the `base_url` instead of the OpenAI API key for local processing.
+   
 
 ---
 
