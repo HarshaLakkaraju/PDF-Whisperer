@@ -32,7 +32,7 @@ PDF-Whisperer is an intelligent PDF reader powered by Large Language Models (LLM
    Start the application with Streamlit:
 
    ```bash
-   streamlit run app.py
+   streamlit run app.py &
    ```
 
 3. **Run Locally with Ollama and Litellm**:
@@ -54,7 +54,7 @@ PDF-Whisperer is an intelligent PDF reader powered by Large Language Models (LLM
    Start the Litellm proxy:
 
    ```bash
-   litellm --model ollama/<model_name>
+   litellm --model ollama/<model_name> &
    ```
    ![alt text](litellm_command.png)
 
