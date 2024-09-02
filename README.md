@@ -1,40 +1,54 @@
+
 ## PDF-Whisperer
 
-This project develops an Intelligent PDF Reader using Large Language Models (LLMs) to read, understand, and interact with PDF documents. The system extracts relevant information, understands context and semantics, and enables users to ask questions, request summaries, or engage in discussions based on the PDF content. Advanced features include entity recognition, contextual understanding, sentiment analysis, and interactive querying. The project supports two modes of operation: 
+PDF-Whisperer is an intelligent PDF reader powered by Large Language Models (LLMs) that allows you to read, analyze, and interact with PDF documents effortlessly. This tool can extract information, understand context, and provide summaries or answers to questions based on the content. It includes advanced capabilities such as entity recognition, contextual understanding, sentiment analysis, and interactive querying.
 
-(1) using an OpenAI API key for cloud-based processing and 
+### Key Features
+1. **Two Modes of Operation**:
+   - **Cloud-based Processing**: Utilize OpenAI’s API for powerful, remote processing of PDF content.
+   - **Local Processing**: Use Ollama and Litellm to run everything offline, ensuring data privacy and control.
 
-(2) running locally with Ollama and Litellm for offline processing.
+2. **Flexible LLM Options**:
+   - Leverage pre-trained LLMs, fine-tuned models, and ensemble methods to achieve a deep understanding of PDF content.
+   - Choose between using your OpenAI API key or running models locally for greater flexibility in data handling and privacy.
 
-The project can leverages pre-trained LLMs, fine-tuned llm , and ensemble methods to produce a comprehensive understanding of PDF content. Users can choose to use their OpenAI API key for cloud-based processing or run the system locally using Ollama and Litellm, providing flexibility and control over data processing. The goal is to automate information extraction, enhance user interaction, and support decision-making. Target audiences include researchers, professionals, and students seeking to simplify information extraction, enhance productivity, and facilitate learning. By harnessing the power of LLMs, this project revolutionizes the way we interact with PDF documents.
+### Target Audience
+- **Researchers, professionals, and students** looking to streamline information extraction, boost productivity, and facilitate learning through an automated, intelligent PDF reader.
 
+### Quick Start
 
-```bash
-pip -r install requirements.txt 
-```
+1. **Install Dependencies**:
 
-### invoke api_key for using OpenAI's GPT model
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-![alt text](image-1.png)
+2. **Run with OpenAI GPT Model**:
 
-###run this following command to start streamlit
+   Set up your OpenAI API key in the application settings.
 
-```bash
-streamlit run app.py
-```
+   ![OpenAI Setup](image-1.png)
 
-### if running using local llm 
+   Start the application with Streamlit:
 
-![alt text](image.png)
+   ```bash
+   streamlit run app.py
+   ```
 
-[ollama]( https://ollama.com/download/)
+3. **Run Locally with Ollama and Litellm**:
 
-[Quick Start - LiteLLM Proxy CLI](https://docs.litellm.ai/docs/proxy/quick_start#quick-start---litellm-proxy--configyaml)
-Run the following command to start the litellm proxy
+   Install [Ollama](https://ollama.com/download/) and follow the [Litellm Proxy Quick Start Guide](https://docs.litellm.ai/docs/proxy/quick_start#quick-start---litellm-proxy--configyaml).
 
-```bash
-litellm --model ollama/<model_name>
-```
-Proxy running on http://0.0.0.0:4000
+   ![Local Setup](image.png)
 
-use this url had base_url in place of openai_api_key
+   Start the Litellm proxy:
+
+   ```bash
+   litellm --model ollama/<model_name>
+   ```
+
+   The proxy will run on `http://0.0.0.0:4000`. Use this URL as the `base_url` instead of the OpenAI API key for local processing.
+
+---
+
+This streamlined version provides a concise overview of your project, focusing on key features, quick start instructions, and the benefits of using your tool.
